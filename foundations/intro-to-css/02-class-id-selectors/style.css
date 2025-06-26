@@ -1,0 +1,21 @@
+.one, .three, .five {
+    background-color: rgba(255,0,0,0.3)
+}
+.three {
+    font-size: 18px;
+    font-weight: bold;
+}
+#two, #four {
+    font-family: "Consolas", "Courier New", monospace;
+}
+#two {
+    font-size: 36px;
+    color: rgb(0,0,255);
+}
+#four {
+    background-color: rgba(0,255,0,0.3);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Number 1, 2, and 5 are class selectors and have the same background color however number 3 is bold and slightly bigger font size. Number 2 and 4 are both ID selectors and have a font family but I couldn't identify the correct font. Number 4 same font -size as number 3. Number 2 has the biggest font-size along with pure blue font color. Number 4 and 3 are both bold.  */
