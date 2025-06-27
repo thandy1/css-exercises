@@ -1,4 +1,5 @@
-.one, .three, .five {
+/* 
+.one, .three, .five { 
     background-color: rgba(255,0,0,0.3)
 }
 .three {
@@ -17,5 +18,25 @@
     font-weight: bold;
     font-size: 18px;
 }
+/* 
+/* The above code still works but going to change up the styles to fit the Self Check. */
 
-/* Number 1, 2, and 5 are class selectors and have the same background color however number 3 is bold and slightly bigger font size. Number 2 and 4 are both ID selectors and have a font family but I couldn't identify the correct font. Number 4 same font -size as number 3. Number 2 has the biggest font-size along with pure blue font color. Number 4 and 3 are both bold.  */
+
+/* New code for Self Check */
+.odd {
+    /* Calls all odd #'s and gives them transparent pure red background. */
+    background-color: rgba(255,0,0,0.3);   
+}
+.font-size {
+    /* 3 and 4 are the same font-size. */
+    font-size: 24px;
+}
+#two {
+    /* Calls #2 and gives pure blue font color and 32px font size since its the biggest. */
+    color: rgb(0,0,255);
+    font-size: 32px;
+}
+#four {
+    /* Calls #4 and gives transparent pure green background color. */
+    background-color: rgba(0,255,0,0.3);
+}
