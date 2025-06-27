@@ -24,8 +24,9 @@
 
 /* New code for Self Check */
 .odd {
-    /* Calls all odd #'s and gives them transparent pure red background. */
+    /* Calls all odd #'s and gives them transparent pure red background, and font family. */
     background-color: rgba(255,0,0,0.3);   
+    font-family:'Times New Roman', Times, serif;
 }
 .font-size {
     /* 3 and 4 are the same font-size. */
@@ -37,6 +38,7 @@
     font-size: 32px;
 }
 #four {
-    /* Calls #4 and gives transparent pure green background color. */
+    /* Calls #4 and gives transparent pure green background color, and bold font. */
     background-color: rgba(0,255,0,0.3);
+    font-weight: bold;
 }
