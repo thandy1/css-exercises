@@ -1,1 +1,11 @@
 /* Add CSS Styling */
+/* Chaining selectors will apply styles if both class names are present in the elements class. */
+.avatar.proportioned {
+    width: 300px;
+    /* setting height to auto will allow the image to retain its original square proportions. */
+    height: auto;
+}
+.avatar.distorted {
+    width: 200px;
+    height: 400px;
+}
