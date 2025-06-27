@@ -1,0 +1,27 @@
+/* This will call all p elements inside the .container class of the div element. Essentially all p elements living inside of the div elements class. */
+.container p {
+    color: rgb(255,0,0);
+    background-color: #fff200;
+    text-align: center;
+    font-size: 20px;
+} 
+
+/* This code snippet will apply the same rules as `.container p`. */
+/* 
+div p { 
+    color: rgb(255,0,0);
+    background-color: #fff200;
+    text-align: center;
+    font-size: 20px;
+}
+*/
+
+/* This code snippet will apply the same rules as `.container p`. */
+/*
+div .text {
+    color: rgb(255,0,0);
+    background-color: #fff200;
+    text-align: center;
+    font-size: 20px;   
+}
+*/
