@@ -1,9 +1,9 @@
+/* 
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.para,
-.small-para {
+.para, .small-para {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
 }
@@ -35,6 +35,55 @@ body {
   font-size: 14px;
 }
 
+div.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+} 
+*/
+/* Commented this out so I could work and have a backup incase I forget the styles. */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.para, .small-para {
+  color: hsl(0, 0%, 0%);
+  font-weight: 800;
+}
+
+/* Placed .para on top of .small-para so .para gains rule order which will make .small-para small since its the last declaration. */
+.para {
+  font-size: 22px;
+}
+
+.small-para {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/* changed .confirm to #confirm-button since it will directly target the confirm button and change it's style. .button already targets both but however because of specificity only cancel-button receives .buttons styling. */
+#confirm-button {
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+
+/* Leave .button alone. */
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+/* Chained .child to .text.child so it becomes one entity for styling. */
+.text.child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+/* leave this alone */
 div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
