@@ -7,21 +7,47 @@ body {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  /* Add here */
+  /* There is 8px between the edge of the card and its content (the blue sections). */
+  padding: 8px;
 }
 
 .title {
   background: #e3f4ff;
+  /* Add here */
+  /* There is 8px between the edge of the card and its content (the blue sections). */
+  padding: 8px;
+  /* The title of the card uses a 16px font. */
+  font-size: 16px;
+  /* There is an 8px gap between each of the blue sections inside the card. */
+  margin-bottom: 8px;
 }
 
 .content {
   background: #e3f4ff;
+  /* Add here */
+  /* The content section has 16px space on the top and bottom, and 8px on either side. */
+  padding: 16px 8px;
+  /* There is an 8px gap between each of the blue sections inside the card. */
+  margin-bottom: 8px;
 }
 
 .button-container {
   background: #e3f4ff;
+  /* Add here */
+  /* There is 8px between the edge of the card and its content (the blue sections). */
+  padding: 8px;
+  text-align: center;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  /* Add here */
+  /* The Big Button has 24px space on the sides, and 8px on top and bottom. */
+  padding: 8px 24px;
+  /* The Big Button is centered on its own line. */
+  display: block;
+  /* Resets default top/bottom margins. Since width is defined and element is displayed as a block, browsers will calculate how much available width their is to split up. Basically it splits the remaining horizontal space equally on both sides centering it. */
+  margin: 0 auto;
 }
