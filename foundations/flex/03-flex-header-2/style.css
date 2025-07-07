@@ -3,15 +3,23 @@ you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
 body {
+  /* does not need extra styles */
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
 }
 
 .header {
+  /* for debugging */
+  /* border: 10px solid #000; */
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  gap: 16px;
+  padding: 8px;
 }
 
 .profile-image {
@@ -30,7 +38,9 @@ body {
 }
 
 button {
-  border: none;
+  /* for debugging */
+  /* border: 1px solid #000; */
+  border: none; 
   border-radius: 8px;
   background: rebeccapurple;
   color: white;
@@ -45,4 +55,46 @@ a {
 
 ul {
   list-style-type: none;
+  /* new styles */
+  display: flex;
+  gap: 16px;
+  /* for debugging */
+  /* border: 1px solid #000; */
+  /* gets rid of default padding */
+  padding: 0;
+  /* get rid of default margins */
+  margin: 0;
+  
 }
+
+.button-container {
+  /* container for button and pfp */
+  /* border: 1px solid #000; */
+  display: flex;
+  margin-left: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Another solution */
+/* 
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+*/
