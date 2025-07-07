@@ -1,8 +1,16 @@
 .container {
+  /* DONT TOUCH THESE */
   background: dodgerblue;
   border: 4px solid midnightblue;
   width: 400px;
   height: 300px;
+  /* turns the div container into a flex container. */
+  display: flex;
+  /* flex-direction is row by default so main axis is justify-content */
+  /* justify-content for main axis centering */
+  justify-content: center;
+  /* align-items for cross-axis centering */
+  align-items: center;
 }
 
 .box {
