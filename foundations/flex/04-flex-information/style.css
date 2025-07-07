@@ -1,16 +1,17 @@
 /* do not edit body */
 body {
   font-family: 'Courier New', Courier, monospace;
+  /* text-align: center; */
 }
 
 img {
   width: 100px;
   height: 100px;
   /* for debugging */
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   /* solution */
-  display: flex;
-  justify-content: center;
+  padding: 8px;
+  
 
 }
 
@@ -18,7 +19,7 @@ img {
   font-size: 36px;
   font-weight: 900;
   /* for debugging */
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   /* solution */
   text-align: center;
   margin-bottom: 32px;
@@ -37,7 +38,32 @@ img {
   background: #eee;
 }
 
-.text {
+
+.container {
+  /* solution */
   display: flex;
+  /* border: 1px solid #000; */
   justify-content: center;
+  gap: 52px;
+
+}
+
+.item {
+  /* solution */
+  max-width: 200px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column; 
+  align-items: center;
+
+}
+
+.text {
+  /* solution */
+  text-align: center;
+  flex-wrap: wrap;
+  /* for debugging */
+  /* border: 1px solid #000; */
+  
+
 }
