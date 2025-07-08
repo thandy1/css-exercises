@@ -20,6 +20,11 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  /* main container for everything */
+  display: flex;
+  /* There is equal space on either side of the icon. Gaps between the icon and the edge of the card, and the icon and the text, are the same. */
+  padding: 16px;
+  gap: 16px; 
 }
 
 .icon {
@@ -30,9 +35,13 @@ body {
   width: 42px;
   height: 42px;
   border-radius: 50%;
+  /* this centers the ! */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; 
+  justify-content: center; 
+  /* keeps the other flex item from smooshing the icon */
+  flex-shrink: 0;
+  
 }
 
 .close-button {
@@ -54,12 +63,14 @@ button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+  gap: 2px;
 }
 
 button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  
 }
 
 button.cancel {
@@ -67,3 +78,20 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+.header {
+  /* display header as a flex container so it can encompass the close button horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+  /* for debugging */
+  /* border: 1px solid #000; */
+}
+
+.text {
+  margin-bottom: 16px;
+}
+
