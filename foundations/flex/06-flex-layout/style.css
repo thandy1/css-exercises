@@ -5,6 +5,12 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  /* for debugging */
+  /* border: 5px solid red; */
+  /* To stick footer to the bottom you will need to use flex and change the direction to column. */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
@@ -24,3 +30,81 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+ul {
+  /* removes dots */
+  list-style: none;
+  /* alternative styles from TOP */
+  /* display: flex; */
+  /* padding: 0; */
+  /* margin: 0; */
+  /* gap: 16px; */
+}
+
+a {
+  /* removes underline */
+  text-decoration: none;
+  /* gray font color */
+  color: #666;
+}
+
+.header {
+  /* header at the top of page */
+  display: flex;
+  /* for debugging */
+  /* border: 1px solid #000; */
+  justify-content: space-between;
+  align-items: center;
+  /* header has padding */
+  padding: 4px 10px;
+}
+
+.right-links, .left-links {
+  display: flex;
+  /* for debugging */
+  /* border: 1px solid #000; */
+  /* space betweens links */
+  gap: 15px;
+  /* padding: 8px; */
+  /* gets rid of default padding in links */
+  padding: 0;
+}
+
+.content {
+  /* logo, input, and buttons are centered in the screen */
+  display: flex;
+  /* it shrinks and grows and refers its initial height from body viewport. grow even distributes sizing so items are same size regardless how much screen is shrunk. */
+  flex: 1; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* space between .content flex items */
+  gap: 15px;
+}
+
+button {
+  /* buttons have appropriate amount of padding */
+  /* padding: 10px; */
+  padding: 8px 16px;
+}
+
+
+.footer {
+  /* footer has a light gray background */
+  background-color: #eeeeee;
+  /* footer at bottom of page */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  /* padding in footer */
+  padding: 4px 10px;
+}
+
+/* alternative styles from TOP */
+.header, .footer { 
+  /* since body is a flex container and its direction is column these styles will put header at the top of the page and footer at the bottom. */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* padding: 16px; */
+}
+
