@@ -5,8 +5,7 @@ body {
   /* 3 flex items total inside the body */
   display: flex; 
    /* displays vertically so footer can be on bottom and header on top and content in the middle.  */
-  flex-direction: column;  
-  flex: 1;   
+  flex-direction: column;   
 }
 
 .header {
